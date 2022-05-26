@@ -90,7 +90,7 @@
 
     $sql="INSERT INTO user_registration (FirstName,LastName,Age,State) VALUES ('$fname','$lname','$age','$state')";
 
-    if($conn->query($sql)===TRUE){
+    if($conn->query($sql)){
         echo "Data Insert Successfully<br>";
     }else{
         echo "Data Insert Unsuccessfully:".$conn->error;
